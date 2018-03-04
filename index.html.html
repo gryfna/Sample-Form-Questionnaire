@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <title>Form Practice</title>
+  <link rel="stylesheet" type="text/css" href="Form%20Practice.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <form>
+    <h1>What do you think?</h1>
+	  <fieldset>
+	    <legend>Personal Information</legend>
+	      <ul>
+		    <li><label>Name: <input type="text" name="name" id="form-personal"></label></li>
+		  <br>
+		    <li><label>Surname: <input type="text" name="surname" id="form-personal"></label></li>
+		  <br>
+		    <li><label>I live in: <input type="text" name="continent" id="form-personal" list="continent-list"></label></li>
+		      <datalist id="continent-list">
+			    <option value="Europe"></option>
+			    <option value="North America"></option>
+			    <option value="South America"></option>
+			    <option value="Asia"></option>
+			    <option value="Africa"></option>
+			    <option value="Australia"></option>
+				<option value="Oceania"></option>
+			  </datalist>
+		  <br>
+		    <li><label>Email Address: <input type="email" name="email" id="form-personal"></label></li>
+	    </ul>
+	  </fieldset>
+	  <br>
+	  <fieldset>
+	    <legend>Trip Details</legend>
+	      <p>Which programme have you chosen?</p>
+		    <ul>
+		      <li><label><input type="radio" name="programme" value="Iran">Iran</label></li>
+			  <li><label><input type="radio" name="programme" value="Iran_Dubai">Iran + Dubai</label></li>
+			  <li><label><input type="radio" name="programme" value="Iran_Iraq">Iran + Iraq</label></li>
+			  <li><label><input type="radio" name="programme" value="Tehran">Tehran Only</label></li>
+		    </ul>
+		  <p>Have you travelled alone?</p>
+		    <ul>
+		      <li><label><input type="radio" name="alone" value="yes">Yes</label></li>
+		      <li><label><input type="radio" name="alone" value="no">No</label></li>
+		    </ul>
+		  <label>If not, how large was your group? <input type="number" name="group" min="2" max="15"></label>
+		<br><br>
+		  <label>On a scale from 1 to 10, indicate how satisfied you were with your group. <input type="range" name="satisfactionRange" class="slider" id="satisfactionInput" min="1" max="10" step="1" oninput="satisfactionOutput.value = satisfactionInput.value"></label>
+		  <output id="satisfactionOutput"></output>
+	  </fieldset>
+	  <br>
+	  <fieldset>
+	    <legend>Rate!</legend>
+		  <p>Which sights have you enjoyed the most? Why?</p>
+		    <textarea cols="50" rows="6"></textarea>
+		  <p>Who was your guide? How could they improve?</p>
+		    <textarea cols="50" rows="6"></textarea>
+		  <p>Why did you choose YourTrip in the first place?</p>
+		    <textarea cols="50" rows="6"></textarea>
+	  </fieldset>
+	  <br>
+	<input type="submit" value="Submit">
+  </form>
+</body>

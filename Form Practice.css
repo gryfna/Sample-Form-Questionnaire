@@ -1,0 +1,130 @@
+body {
+	background-image: url(Dubai.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+form {
+	margin-left: 20%;
+	margin-right: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+fieldset {
+	border: 2px solid #ffffff;
+	background-color: rgba(247, 220, 243, 0.45);
+}
+
+h1, legend, p, li, label {
+	font-family: 'Nunito', sans-serif;
+}
+	
+h1 {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 3em;
+	color: #ffffff;
+}
+
+legend {
+	font-weight: bold;
+	color: #1e0029;
+}
+
+ul li {
+	list-style: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+	width: 8.4375em;
+    height: 0.4375em;
+    border-radius: 0.3125em;
+    background: #ffffff;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+	width: 1.0625em;
+    height: 1.0625em;
+    border-radius: 50%;
+    background: #1e0029;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 1.0625em;
+    height: 1.0625em;
+    border-radius: 50%;
+    background: #1e0029;
+    cursor: pointer;
+}
+
+output {
+	font-family: 'Nunito', sans-serif;
+	font-size: 0.8em;
+}
+
+textarea {
+	margin-left: 22%;
+}
+
+input[type="submit"] {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.2em;
+	margin-right: 40%;
+	margin-left: 40%;
+	padding: 0.31235em;
+	background-color: rgba(247, 220, 243, 0.45);
+    border: 1px solid #ffffff;
+	border-radius: 5%;
+}
+
+input[type="submit"]:hover {
+	border: 1px solid #1e0029;
+	background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1000px) {
+	textarea {
+		margin-left: 8%;
+	}
+	
+	li {
+		margin-left: -18%;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	li {
+		padding-left: 15%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	li {
+	    margin-left: -22%;	
+	}
+	
+	textarea {
+		height: 1.5655em;
+		width: 11.35em;
+		margin-left: 0;
+	}
+	
+	input[type="submit"] {
+		margin-left: 30%;
+		margin-right: 30%;
+		padding-right: 0.4375em;
+	}
+}
